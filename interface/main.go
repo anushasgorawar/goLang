@@ -25,4 +25,8 @@ func main() {
 	c := Circle{radius: 5}
 	fmt.Printf("Area of cicle c is: %v", c.CalculateArea())
 	fmt.Printf("Area of cicle c is: %v", CalculateArea(c))
+
+	var d Shape = Circle{radius: 5}
+	fmt.Printf("Area of cicle c is: %v", d.CalculateArea())
+	fmt.Printf("Area of cicle c is: %v", CalculateArea(d))
 }
