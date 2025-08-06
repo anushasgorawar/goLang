@@ -11,4 +11,14 @@ func main() {
 	for ind, ele := range arr1 {
 		fmt.Println("Value in ", ind, " index is: ", ele)
 	}
+	for ind, ele := range arr1 {
+		defer fmt.Println("Value in ", ind, " index is: ", ele)
+	}
+
+	m := make(map[string]int)
+	m["test"] = 100
+	fmt.Println(m)
+	fmt.Println(m["test"])
+	delete(m, "test")
+	fmt.Println(m)
 }
