@@ -4,12 +4,13 @@ import "testing"
 
 func TestIsEven(t *testing.T) {
 	n := 10
-	expected := "Yess"
+	expected := "Yes"
 	recieved := IsEven(n)
 	if expected != recieved {
 		t.Errorf("Expected: %v, got %v", expected, recieved)
 	}
 }
+
 // (base) Anushas-MacBook-Air:Test anushasg$ go test .
 // ok      github.com/anushasgorawar/goLang        0.661s
 // (base) Anushas-MacBook-Air:Test anushasg$ go test .
